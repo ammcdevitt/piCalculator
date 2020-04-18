@@ -1,0 +1,27 @@
+<html>
+<body>
+    <input type="button" onclick="Calculate()" value="Calculate Pi">
+    <script type="text/javascript">
+        var c=0;
+        function Calculate()
+        {
+            var c=prompt("Enter number of cycles:","0");
+            if (c>0)
+            {
+                var pi=0;
+                var n=1;
+                for (i=0;i<=c;i++)
+                {
+                    pi=pi+(4/n)-(4/(n+2))
+                    n=n+4
+                }
+                alert(pi);
+            }
+            else
+            {
+                alert("Error: input must be a whole number.");
+            }
+        }
+    </script>
+</body>
+</html>
